@@ -48,16 +48,16 @@ console.log(rateInNumber);  //NaN
 
 /************************************/
 
-let isLoggedIn=1;
+let isLoggedIn = 1;
 
-let isLoggedInBoolean=Boolean(isLoggedIn);
+let isLoggedInBoolean = Boolean(isLoggedIn);
 console.log(isLoggedInBoolean);  //true
 
 
 /************************************/
 
-let sNum=33;
-let stringNumber=String(sNum);
+let sNum = 33;
+let stringNumber = String(sNum);
 console.log(stringNumber); // 33
 console.log(typeof stringNumber);  //string
 
@@ -69,5 +69,45 @@ console.log(typeof stringNumber);  //string
 // 1 => true; 0 => false;
 // "" => false
 // "sutun" => true
+
+
+
+/******************Operations*********************/
+
+console.log("********************");
+
+let a = 10;
+let neg_a = -a;
+console.log(neg_a);  //-10
+
+// console.log(10 + 2);  //12
+// console.log(2 - 8);   //-6
+// console.log(2 * 2);   //4
+// console.log(2 ** 3);  //8
+// console.log(4 / 3);   //1.333333
+// console.log(5 % 6);   //5
+
+let str1 = "hello";
+let str2 = " sutun!";
+let str3 = str1 + str2;
+console.log(str3);  //hello sutun!
+
+// console.log("1" + 2);  //12
+// console.log(1 + "2");  //12
+// console.log("2"+5+8);  //258
+// console.log(2+5+"8");  //78
+
+// console.log(+true);  //1
+// console.log(+"");  //0
+
+
+let gameCounter = 100;
+gameCounter++;
+console.log(gameCounter);  //101
+++gameCounter;
+console.log(gameCounter);  //102
+
+
+
 
 
