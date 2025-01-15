@@ -49,3 +49,32 @@ const myFunction = function () {
 }
 console.log(typeof myFunction);  //function
 
+
+
+/*****************Memory Working***************************/
+
+// Stack (Primitive)=> it gives copy
+// Heap (Non-primitive)=> it gives reference
+
+let myName = "sutun";
+let otherName = myName;
+console.log(otherName);  //sutun
+
+otherName = "bapi";
+console.log(otherName);  //bapi
+console.log(myName);  //sutun
+
+let userOne = {
+    email: "user@gmail.com",
+    upi: "user@ybl"
+}
+let userTwo = userOne;
+
+userTwo.email = "sutun@gmail.com";
+
+console.log(userOne.email);  //sutun@gmail.com
+console.log(userTwo.email);  //sutun@gmail.com
+
+
+
+
