@@ -109,13 +109,27 @@ const users = [
     }
 ]
 
-console.log(users[1].email);  //b@gmail.com
+// console.log(users[1].email);  //b@gmail.com
 
-console.log(tinderUser);  //{ id: 'abc123', name: 'Sammy', isLoggedIn: false }
-console.log(Object.keys(tinderUser));   //[ 'id', 'name', 'isLoggedIn' ]
-console.log(Object.values(tinderUser));   //[ 'abc123', 'Sammy', false ]
-console.log(Object.entries(tinderUser));   //[ [ 'id', 'abc123' ], [ 'name', 'Sammy' ], [ 'isLoggedIn', false ] ]
+// console.log(tinderUser);  //{ id: 'abc123', name: 'Sammy', isLoggedIn: false }
+// console.log(Object.keys(tinderUser));   //[ 'id', 'name', 'isLoggedIn' ]
+// console.log(Object.values(tinderUser));   //[ 'abc123', 'Sammy', false ]
+// console.log(Object.entries(tinderUser));   //[ [ 'id', 'abc123' ], [ 'name', 'Sammy' ], [ 'isLoggedIn', false ] ]
 
-console.log(tinderUser.hasOwnProperty("isLoggedIn"));  //true
-console.log(tinderUser.hasOwnProperty("isLogged"));   //false
+// console.log(tinderUser.hasOwnProperty("isLoggedIn"));  //true
+// console.log(tinderUser.hasOwnProperty("isLogged"));   //false
+
+
+
+const course = {
+    coursename: "JavaScript",
+    price: "999",
+    courseInstructor: "Kishore"
+}
+
+const { courseInstructor } = course;
+console.log(courseInstructor);    //Kishore
+
+const { courseInstructor: instructor } = course;
+console.log(instructor);     //Kishore
 
