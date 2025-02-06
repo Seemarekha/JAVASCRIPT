@@ -1,0 +1,140 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+/* Game Wrapper */
+.wrapper {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    width: 400px;
+    max-width: 90%;
+    animation: fadeIn 1s ease-in-out;
+    border: 2px solid rgba(0, 255, 255, 0.3);
+}
+
+/* Title */
+h1 {
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+/* Paragraphs */
+p {
+    font-size: 16px;
+    margin: 8px 0;
+}
+
+/* Input Styling */
+.guessField {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    border: 2px solid rgba(0, 255, 255, 0.4);
+    border-radius: 8px;
+    outline: none;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    transition: 0.3s;
+}
+
+.guessField::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.guessField:focus {
+    border-color: #00ffff;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.6);
+}
+
+/* Submit Button */
+.guessSubmit {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 5px 15px rgba(0, 114, 255, 0.3);
+}
+
+.guessSubmit:hover {
+    background: linear-gradient(135deg, #0072ff, #00c6ff);
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 114, 255, 0.5);
+}
+
+/* Result Section */
+.result {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.lowOrHigh {
+    font-weight: bold;
+    font-size: 18px;
+    color: #00ffff;
+}
+
+/* Start New Game Button */
+#newGame {
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    background: linear-gradient(135deg, #ff4e50, #ff9966);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.3s;
+    text-transform: uppercase;
+    box-shadow: 0 5px 15px rgba(255, 78, 80, 0.3);
+}
+
+#newGame:hover {
+    background: linear-gradient(135deg, #ff9966, #ff4e50);
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(255, 78, 80, 0.5);
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
