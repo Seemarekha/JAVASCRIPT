@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html events</title>
+</head>
+<body style="background-color:#414141 ; color: aliceblue;">
+    <h2>Amazing image</h2>
+    <div>
+        <ul id="images">
+            <li><img width="200px" id="one" src="https://i.pinimg.com/736x/8a/06/61/8a0661d58479d9b344f42c1ab70c36b0.jpg" alt="photoshop"></li>
+            <li><img width="200px" id="two" src="https://i.pinimg.com/736x/32/15/ae/3215ae877ca446da49358bfb1f96c07c.jpg" alt=""></li>
+            <li><img width="200px" id="three" src="https://i.pinimg.com/474x/f9/d4/02/f9d402f6dc92258d755f61af872b1889.jpg" alt=""></li>
+            <li><img width="200px" id="four" src="https://i.pinimg.com/474x/3d/e6/82/3de68224eb4ee0977877a8b9f6a63797.jpg" alt=""></li>
+            <li><img width="200px" id="five" src="https://e1.pxfuel.com/desktop-wallpaper/488/292/desktop-wallpaper-stylish-virat-kohli-virat-kohli-styilish.jpg" alt=""></li>
+            <li><img width="200px" id="six" src="https://www.probatsman.com/wp-content/uploads/2024/06/Virat-Kohli-Hairstyle.jpg" alt=""></li>
+            <li><img width="200px" id="seven" src="https://w0.peakpx.com/wallpaper/172/748/HD-wallpaper-virat-kohli-criketer-sports-virat-kohli-thumbnail.jpg" alt=""></li>
+            <li><img width="200px" id="eight" src="https://i.pinimg.com/736x/13/b9/da/13b9da297d0eac5a3f4578601845bcc6.jpg" alt=""></li>
+            <li><img width="200px" id="nine" src="https://i.pinimg.com/736x/55/59/48/5559489c2cc261d61a0b0bccbfb906e7.jpg" alt=""></li>
+
+            <li><a style="color: aliceblue; font-size: 20px;" href="https://google.com" id="google">Google</a></li>
+        </ul>
+    </div>
+</body>
+<script>
+    // document.getElementById('three').onclick=function(){
+    //     alert("Third image clicked")
+    // }
+
+    //attachEvent()
+    //jQuery - on
+
+    // type, timestamp, preventDefault
+    // target, toElement, srcElement, currentTarget
+    // clientX, clientY, screenX, screenY
+    // altkey, ctrlkey, shiftkey, keyCode
+    // bubbling, capturing
+
+    // document.getElementById('images').addEventListener('click',function(e){
+    //     console.log("clicked inside the ul");
+        
+    // },false)
+
+    // document.getElementById('three').addEventListener('click',function(e){
+    //     console.log("Third image clicked");
+    //     e.stopPropagation()
+    // },false)
+
+    // document.getElementById('google').addEventListener('click',function(e){
+    //     console.log("Google clicked");
+    //     e.preventDefault();
+    //     e.stopPropagation();
+    // },false)
+
+
+    /***********************************************/
+
+    document.querySelector('#images').addEventListener('click',function(e){
+        console.log(e.target.tagName);
+        if(e.target.tagName=='IMG')
+    {
+        console.log(e.target.id);
+        let removeIt=e.target.parentNode;
+        removeIt.remove();
+    }
+
+        
+        // removeIt.parentNode.removeChild(removeIt);
+    },false);
+
+</script>
+</html>
